@@ -1,5 +1,3 @@
-console.log('Client side JS file is loaded');
-
 // fetch('http://puzzle.mead.io/puzzle').then((response) => {
 //     // console.log(response.json());
 //     response.json().then((data) => {
@@ -8,15 +6,15 @@ console.log('Client side JS file is loaded');
 // })
 
 
-fetch('/weather?address=!').then((response) => {
-    response.json().then((data) => {
-        if (data.error) {
-            console.log(data);
-        } else {
-            console.log(data);
-        }
-    })
-})
+// fetch('/weather?address=!').then((response) => {
+//     response.json().then((data) => {
+//         if (data.error) {
+//             console.log(data);
+//         } else {
+//             console.log(data);
+//         }
+//     })
+// })
 
 
 // fetch('http://localhost:3000/weather?address=!').then((response) => {
