@@ -10,6 +10,7 @@ const forecast = require('./utils/forecast')
 // console.log(path.join(__dirname, '../public'));
 
 const app = express()
+const port = process.env.PORT || 3000
 
 //Define Paths for Express Config
 const publicDirectoryPath = path.join(__dirname, '../public')//the public dir needs to be accessed via abs path
@@ -108,8 +109,8 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('Server is up and running');
+app.listen(port, () => {
+    console.log(`Server is up and running on ${port}`);
 })
 
 //Use 'nodemon src/app.js -e js,hbs' to make nodemon restart when saves are made in the files with the registered extnsns
