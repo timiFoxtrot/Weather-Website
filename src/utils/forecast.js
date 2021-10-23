@@ -13,7 +13,7 @@ const forecast = (lat, long, callback) => {
             console.log(response.body);
             callback('Invalid coordinates detected', undefined)
         } else{
-            callback(undefined, `${current.weather_descriptions[0]}. It is currently ${current.temperature} degrees out. It feels like ${current.feelslike} degrees out`
+            callback(undefined, `${current.weather_descriptions[0]}. It is currently ${current.temperature} degrees out, it feels like ${current.feelslike} degrees out. Observation time is ${current.observation_time} GMT`
             )
         }
     })
